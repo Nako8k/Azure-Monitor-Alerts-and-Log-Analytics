@@ -86,7 +86,7 @@ I deployed a Windows Server VM named `Manutaki` to act as the monitored resource
 1. Search **Virtual Machines** → **+ Create** → **Azure Virtual Machine**
 2. Resource group: `WakaHuia`
 3. VM name: `Manutaki` | Region: `Australia East`
-4. Image: `Windows Server 2025 Datacenter` | Size: `Standard_Dct1`
+4. Image: `Windows Server 2025 Datacenter` | Size: `Standard_Dcs`
 5. Configured admin credentials and allowed inbound **RDP (3389)**
 6. Click **Review + create** → **Create**
 
@@ -222,9 +222,18 @@ Heartbeat
 
 ## Key Takeaways
 
+- KQL provides a quick and efficient way to create query-based alerts for different resources
+- Creating a Log Analytics workspace helps centralize data collection and management for alerts
+- Designing alert thresholds and stress-testing them provided valuable insight into how high-severity system alerts are configured and triggered
+- KQL is a language I will need to learn for future projects and workloads, as it can help improve the performance and efficiency of queries and related tasks
+
 ---
 
 ## Lessons Learned
+
+- <b>Alert, alret, alert</b> — From this lab, I now understand the importance of setting different alerts for systems, resources, and tasks. This helps manage the health of the different resources within my tenant and enables me to triage or escalate issues when alerts, such as Emergency or Alert-level notifications, are triggered. Pairing an email address with alerts also gives me insight into how real-world notifications are sent to inform users of issues that require attention. Overall, this was a valuable lesson and highlighted the importance of effective monitoring and alert management.
+
+- <b>Kusto, ohh Kusto </b> — Kusto Query Language (KQL) is still somewhat of a grey area for me, but seeing how it can be utilized in a real environment has helped paint a clearer picture of its practical applications beyond theoretical concepts. I plan to continue learning this query language in the hope that it will help me with the AZ-104 certification, as well as future labs, projects, and professional work.
 
 ---
 
