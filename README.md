@@ -1,15 +1,3 @@
-<img src="https://imgur.com/GeQ7Fyj.png" height="80%" width="80%" alt=""/>
-<img src="https://imgur.com/Iokk5gB.png" height="80%" width="80%" alt=""/>
-<img src="https://imgur.com/49P5tPJ.png" height="80%" width="80%" alt=""/>
-<img src="https://imgur.com/cTLWniU.png" height="80%" width="80%" alt=""/>
-<img src="https://imgur.com/TMTG7Po.png" height="80%" width="80%" alt=""/>
-<img src="https://imgur.com/kju1jGc.png" height="80%" width="80%" alt=""/>
-<img src="https://imgur.com/aMsRPxP.png" height="80%" width="80%" alt=""/>
-<img src="https://imgur.com/L7LXabu.png" height="80%" width="80%" alt=""/>
-<img src="https://imgur.com/LFMZCl7.png" height="80%" width="80%" alt=""/>
-<img src="https://imgur.com/ueGF7aQ.png" height="80%" width="80%" alt=""/>
-<img src="https://imgur.com/E3RmTto.png" height="80%" width="80%" alt=""/>
-
 # Azure Monitor Alerts & Log Analytics Lab
 
 > **Disclaimer:** All Azure resources created in this lab were deleted after completion. No services were left running. This lab was built purely for learning and documentation purposes.
