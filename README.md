@@ -6,26 +6,25 @@
 
 ## Description
 
-This lab focuses on Azure Monitor, Log Analytics, and alert configuration. It covers deploying a Windows VM, connecting it to a Log Analytics Workspace via a Data Collection Rule, writing KQL queries against live performance data, and configuring an alert rule that fires a real email notification when CPU thresholds are breached.
+This lab focuses on Azure Monitor, Log Analytics, and alert configuration. It covers deploying a Windows VM, connecting it to a Log Analytics Workspace via a Data Collection Rule, writing KQL queries, configuring alert rules that fire real email notifications.
 
 ---
 
 ## What I Covered in this Lab
 
 - Deploying a Windows VM and connecting it to Azure Monitor via a Data Collection Rule
-- Setting up a Log Analytics Workspace to ingest performance and heartbeat data
-- Writing KQL queries to analyse CPU metrics and agent connectivity
+- Setting up a Log Analytics Workspace to ingest performance
+- Writing KQL queries to analyse CPU and agent connectivity
 - Configuring an Action Group to deliver email alert notifications
-- Creating a metric alert rule with a defined CPU threshold
+- Creating a alert rule for the CPU threshold
 - Triggering a live alert by stress-testing the VM and confirming the notification
 
 ---
 
-## Future Planned Objectives to Cover
+## Future Planned Azure labs
 
-- <!-- e.g. Log-based alerts using KQL queries rather than metric thresholds -->
-- <!-- e.g. Azure Monitor Workbooks for custom dashboards -->
-- <!-- e.g. Diagnostic settings on additional resource types -->
+- Azure DNS and custom domain routing
+- Azure app service and autoscale deployment
 
 ---
 
@@ -64,7 +63,7 @@ I created the resource group `WakaHuia` in the `Australia East` region to house 
 
 ## Part 2 — Log Analytics Workspace
 
-I created the Log Analytics Workspace `Angitu-Log` as the central destination for all VM telemetry and performance data collected during the lab.
+I created the Log Analytics Workspace `Angitu-Log` as the central destination for all VM data collected during the lab.
 
 **Steps:**
 
@@ -87,7 +86,7 @@ I deployed a Windows Server VM named `Manutaki` to act as the monitored resource
 1. Search **Virtual Machines** → **+ Create** → **Azure Virtual Machine**
 2. Resource group: `WakaHuia`
 3. VM name: `Manutaki` | Region: `Australia East`
-4. Image: `Windows Server 2022 Datacenter` | Size: `Standard_B1s`
+4. Image: `Windows Server 2025 Datacenter` | Size: `Standard_Dct1`
 5. Configured admin credentials and allowed inbound **RDP (3389)**
 6. Click **Review + create** → **Create**
 
@@ -142,7 +141,7 @@ I created an Action Group to define how alerts would be delivered — in this ca
 
 ## Part 6 — Alert Rule (Karanga-1)
 
-I created a metric alert rule scoped to `Manutaki` that would trigger whenever average CPU exceeded 70% over a 5-minute window.
+I created  alert rule scoped to `Manutaki` that would trigger whenever average CPU exceeded 70% over a 5-minute window.
 
 **Steps:**
 
