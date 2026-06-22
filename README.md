@@ -111,6 +111,8 @@ I created a Data Collection Rule to connect `Manutaki` to `Angitu-Log`, enabling
 6. Click **Review + create** → **Create**
 7. Confirmed **Azure Monitor Agent** extension installed automatically on `Manutaki`
 
+<img src="https://imgur.com/TMTG7Po.png" height="80%" width="80%" alt=""/>
+
 | Data Source | Destination |
 | ----------- | ----------- |
 | Performance Counters (CPU, Memory, Disk, Network) | `Angitu-Log` |
@@ -133,8 +135,6 @@ I created an Action Group to define how alerts would be delivered — in this ca
    - Type: **Email/SMS/Push/Voice**
    - Name: `email-notify` | entered lab email address
 5. Click **Review + create** → **Create**
-
-<img src="https://imgur.com/TMTG7Po.png" height="80%" width="80%" alt=""/>
 
 <img src="https://imgur.com/kju1jGc.png" height="80%" width="80%" alt=""/>
 
